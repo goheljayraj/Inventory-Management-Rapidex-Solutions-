@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".additemsactivity">
+
+    <EditText
+        android:id="@+id/multiplierid"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="@string/multiplier"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="@+id/barcodeid"
+        app:layout_constraintTop_toBottomOf="@+id/barcodeid" />
+
+    <EditText
+        android:id="@+id/itemnameid"
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/ItemName"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <EditText
+        android:id="@+id/barcodeid"
+        android:layout_width="339dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/barcode"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/itemnameid"
+        app:layout_constraintTop_toBottomOf="@+id/itemnameid" />
+
+    <EditText
+        android:id="@+id/quantityid"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="@string/quantity"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/multiplierid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/barcodeid"
+        app:layout_constraintTop_toBottomOf="@+id/barcodeid" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/quantity"
+        app:layout_constraintStart_toStartOf="@+id/barcodeid"
+        app:layout_constraintTop_toBottomOf="@+id/barcodeid" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/multiplier"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/barcodeid" />
+
+    <Button
+        android:id="@+id/addbuttonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barcodeid" />
+
+    <Button
+        android:id="@+id/viewallbuttonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="View All"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbuttonid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

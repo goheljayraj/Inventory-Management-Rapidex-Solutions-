@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rapidex Inventory Management</string>
+    <string name="ItemName">Name</string>
+    <string name="barcode">Barcode</string>
+    <string name="quantity">Quantity</string>
+    <string name="multiplier">Multiplier</string>
+    <string name="string_inventory">Inventory</string>
+    <string name="string_exportbutton">Export</string>
+</resources>

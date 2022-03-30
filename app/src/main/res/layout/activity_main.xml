@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/additemsid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="23sp"
+    android:paddingEnd="10sp"
+    android:paddingRight="23sp"
+    android:paddingBottom="10sp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonpress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Scan Now"
+        app:backgroundTint="#A5A8A8"
+        app:layout_constraintStart_toStartOf="@+id/buttonadditems"
+        app:layout_constraintTop_toBottomOf="@+id/buttonadditems" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="316dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imglogo" />
+
+    <Button
+        android:id="@+id/buttonadditems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="164dp"
+        android:text="Add Items"
+        app:backgroundTint="#B0B3B3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
